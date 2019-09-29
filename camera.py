@@ -1,11 +1,11 @@
 from flask import Flask, render_template, Response
 
-app = Flask(__name__)
-
 import time
 import io
 import threading
 import picamera
+
+app = Flask(__name__)
 
 class Camera(object):
     thread = None
